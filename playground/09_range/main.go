@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	
 )
 
 func main() {
@@ -27,12 +26,13 @@ func main() {
 
 	//Range with map
 
-	emails := make(map[string]string)
-	emails["bob"] = "bob@gmail.com"
-	emails["Aneta"] = "anet@gmail.com"
-	emails["Ondrej"] = "hungryondrs@seznam.cz"
+	// emails := make(map[string]string)
+	// emails["bob"] = "bob@gmail.com"
+	// emails["Aneta"] = "anet@gmail.com"
+	// emails["Ondrej"] = "hungryondrs@seznam.cz"
+	emails := map[string]string{"Bob": "email@gmail.com"}
 
-	for k, v := emails range {
-		fmt.Printf("%s: %s\n",k, v)
+	for k, v := range emails {
+		fmt.Printf("%s: %s\n", k, v)
 	}
 }
