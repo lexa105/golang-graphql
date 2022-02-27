@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	
 )
 
 func main() {
@@ -32,7 +31,7 @@ func main() {
 	emails["Aneta"] = "anet@gmail.com"
 	emails["Ondrej"] = "hungryondrs@seznam.cz"
 
-	for k, v := emails range {
-		fmt.Printf("%s: %s\n",k, v)
+	for k, v := range emails {
+		fmt.Printf("%s: %s\n", k, v)
 	}
 }
